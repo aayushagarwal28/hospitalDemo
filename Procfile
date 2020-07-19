@@ -1,1 +1,1 @@
-web: java $JAVA_OPTS -jar target/hospitalt.war -Dserver.port=5000 com.websystique.springboot.SpringBootCRUDApp
+web: java -Xms128m -Xmx512m -jar target/dependency/abc.jar --port 5000  target/*.war
