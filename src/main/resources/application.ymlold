@@ -1,0 +1,37 @@
+---
+server:
+  port: 5000
+  contextPath: /hospitalT
+---
+spring:
+  profiles: default
+  active: default
+datasource:
+    url: jdbc:sqlserver://c8av1qxwxaqk.us-east-2.rds.amazonaws.com:1433/hospitalT_LIVE
+    username: admin
+    password: admin123
+    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    defaultSchema:
+    maxPoolSize: 10
+    hibernate:
+      hbm2ddl.method: create-drop
+      show_sql: true
+      format_sql: true
+      dialect: org.hibernate.dialect.SQLServer2012Dialect
+---
+spring:
+  profiles: prod
+  active: prod
+datasource:
+  sampleapp:
+    url: jdbc:mysql://localhost:3306/websystique
+    username: root
+    password:
+    driverClassName: com.mysql.jdbc.Driver
+    defaultSchema:
+    maxPoolSize: 20
+    hibernate:
+      hbm2ddl.method: update
+      show_sql: true
+      format_sql: true
+      dialect: org.hibernate.dialect.MySQLDialect
