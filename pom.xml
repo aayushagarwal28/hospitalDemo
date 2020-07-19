@@ -91,7 +91,7 @@
           <appName>SpringBootCRUDApplicationExample</appName>
           <jdkVersion>1.8</jdkVersion>
             <processTypes>
-     <web>java $JAVA_OPTS -cp target/classes:C:/users/priyaaga/.m2/repository/* com.websystique.springboot.SpringBootCRUDApp</web>
+     <web>java $JAVA_OPTS -jar ${project.build.directory}/hospitalT.jar com.websystique.springboot.SpringBootCRUDApp</web>
            </processTypes>
       </configuration>
   </plugin>
