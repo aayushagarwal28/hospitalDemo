@@ -1,2 +1,1 @@
-
-web: java  -jar -Dserver.port=5000 /target/*.war
+web: java -cp target/classes:target/dependency/* com.websystique.springboot.SpringBootCRUDApp
