@@ -91,7 +91,7 @@
           <appName>SpringBootCRUDApplicationExample</appName>
           <jdkVersion>1.8</jdkVersion>
             <processTypes>
-     <web>web: java -Dserver.port=5000 $JAVA_OPTS target/dependency/*</web>
+     <web>web: java -Dserver.port=5000 target/dependency/*</web>
            </processTypes>
       </configuration>
   </plugin>
